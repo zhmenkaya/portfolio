@@ -57,4 +57,35 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.about .container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.about__title {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 15px;
+  background-color: #3E3E3E;
+  color: #F2F2F2;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  margin: 300px 0 0 0;
+  line-height: 1.1;
+  position: relative; }
+  .about__title::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #3E3E3E;
+    position: absolute;
+    top: 50%;
+    left: 100%; }
+
+.footer {
+  background-color: #81C341;
+  color: #3E3E3E; }
+
 /*# sourceMappingURL=style.min.css.map */
