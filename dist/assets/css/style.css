@@ -130,6 +130,10 @@ body {
     left: 100%;
 }
 
+.skills {
+    height: 100%;
+}
+
 .skills .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -159,6 +163,65 @@ body {
     position: absolute;
     top: 50%;
     left: 100%;
+}
+
+.skills__indicator {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    width: 500px;
+    height: 10px;
+    background-size: 400%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.skills__indicator:hover {
+    -webkit-animation: animate 8s linear infinite;
+    animation: animate 8s linear infinite;
+}
+
+.skills__indicator-wrap {
+    border: 1px solid yellow;
+    height: 10px;
+    width: 700px;
+}
+
+.skills__indicator-line {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    height: 10px;
+    width: 0%;
+    -webkit-animation-name: progress;
+    animation-name: progress;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    90% {
+        width: 70%;
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    90% {
+        width: 70%;
+    }
 }
 
 .portfolio .container {
