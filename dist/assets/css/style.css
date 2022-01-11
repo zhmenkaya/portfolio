@@ -199,7 +199,6 @@ body {
 .contacts .container {
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .contacts__title {
@@ -214,6 +213,7 @@ body {
     text-transform: uppercase;
     margin: 25px 0 0 0;
     line-height: 1.1;
+    border: 1px solid #F2F2F2;
     position: relative;
 }
 
@@ -229,17 +229,40 @@ body {
 }
 
 .contacts__text {
-    max-width: 660px;
+    max-width: 950px;
     text-align: left;
     color: #F2F2F2;
     font-size: 24px;
 }
 
-.contacts___bottom {
+.contacts__bottom {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
+}
+
+.contacts__rightblock {
+    margin: 30px 0 0 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contacts__link {
+    text-decoration: none;
+    display: inline-block;
+    height: 65px;
+    width: 220px;
+    color: #F2F2F2;
+    font-weight: 600;
+    background-color: #81C341;
+    font-size: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .contacts__form {
@@ -253,6 +276,7 @@ body {
 }
 
 .form {
+    outline: none;
     padding: 30px  0;
 }
 
@@ -262,6 +286,7 @@ body {
 }
 
 .form__input {
+    outline: none;
     border: 1px solid #81C341;
     height: 45px;
     color: #81C341;
@@ -301,9 +326,7 @@ body {
 }
 
 .form__input:focus {
-    color: #3E3E3E;
-    background-color: #81C341;
-    font-size: 24px;
+    box-shadow: 0 0 30px #456822;
 }
 
 .form__form-btn {
@@ -327,7 +350,7 @@ textarea.form__input {
 }
 
 .footer {
-    height: 100px;
+    height: 200px;
     background-color: #81C341;
 }
 
@@ -343,6 +366,27 @@ textarea.form__input {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.footer__top {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px 0;
+}
+
+.footer__iconwrap {
+    border: 2px solid #3E3E3E;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 15px;
+}
+
+.footer__icon {
+    width: 100%;
+    padding: 10px;
 }
 
 .footer__copyright {

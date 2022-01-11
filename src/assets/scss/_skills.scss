@@ -1,4 +1,6 @@
 .skills{
+    // background-color: #3E3E3E;
+    height: 100%;
     .container{
         max-width: 1140px;
         margin: 0 auto;
@@ -26,5 +28,56 @@
             top: 50%;
             left: 100%;
         }
+    }
+    &__indicator{
+        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+        width: 500px;
+        height: 10px;
+        background-size: 400%;
+        border-radius:30px;
+        -webkit-border-radius:30px;
+        -moz-border-radius:30px;
+        -ms-border-radius:30px;
+        -o-border-radius:30px;
+        &:hover {
+            animation: animate 8s linear infinite;
+          }
+    }
+}
+
+// .skills__indicator:hover {
+//     animation: animate 8s linear infinite;
+// }
+// @keyframes animate {
+//     0% {
+//         background-position: 0%;
+//     }
+//     100% {
+//         background-position: 400%;
+//     }
+// }
+
+.skills__indicator-wrap{
+    border: 1px solid yellow;
+    height: 10px;
+    width: 700px;
+}
+.skills__indicator-line{
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    height: 10px;
+    width: 0%;
+    animation-name: progress;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+    0%{
+        width: 0%;
+    }
+    90%{
+        width: 70%;
     }
 }

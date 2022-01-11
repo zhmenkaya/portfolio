@@ -92,32 +92,66 @@ body {
     top: 50%;
     left: 100%; }
 
-.skills .container {
-  max-width: 1140px;
-  margin: 0 auto; }
-
-.skills__title {
-  margin: 0 auto;
-  display: inline-block;
-  padding: 15px;
-  background-color: #3E3E3E;
-  color: #F2F2F2;
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  margin: 25px 0 0 0;
-  line-height: 1.1;
-  position: relative; }
-  .skills__title::after {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 2px;
+.skills {
+  height: 100%; }
+  .skills .container {
+    max-width: 1140px;
+    margin: 0 auto; }
+  .skills__title {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 15px;
     background-color: #3E3E3E;
-    position: absolute;
-    top: 50%;
-    left: 100%; }
+    color: #F2F2F2;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+    line-height: 1.1;
+    position: relative; }
+    .skills__title::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 2px;
+      background-color: #3E3E3E;
+      position: absolute;
+      top: 50%;
+      left: 100%; }
+  .skills__indicator {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    width: 500px;
+    height: 10px;
+    background-size: 400%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px; }
+    .skills__indicator:hover {
+      animation: animate 8s linear infinite; }
+
+.skills__indicator-wrap {
+  border: 1px solid yellow;
+  height: 10px;
+  width: 700px; }
+
+.skills__indicator-line {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  height: 10px;
+  width: 0%;
+  animation-name: progress;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes progress {
+  0% {
+    width: 0%; }
+  90% {
+    width: 70%; } }
 
 .portfolio .container {
   max-width: 1140px;
