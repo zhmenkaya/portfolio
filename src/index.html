@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>gulp project</title>
+    <title>portfolio</title>
 </head>
 <body>
     <header class="header">
@@ -30,6 +30,7 @@
                         <p class="main__text">HELLO, MY NAME IS</p>
                         <h1 class="main__title">YAUHENIYA Klimovich</h1> 
                         <p class="main__text">WEB DEVELOPER / HTML CODER BASED IN MINSK</p>
+                        <a class="contacts__link" href="https://drive.google.com/file/d/1DcYRrBt0AMiYL9JUCSJxtuHl_uu0u-nf/view?usp=sharing" download="">Download CV</a>
                     </div>
                     <div class="main__wrap-img">
                         <img class="main__img"src="./assets/images/imgonline-com-ua-CompressBySize-XbBCLRLqlvFAIN3m.jpg" alt="">
@@ -112,6 +113,14 @@ Ready to consider project work and full-time employment.
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="portfolio__title">projects</h2>
+            <div class="portfolio__project-wrapper">
+                <div class="portfolio__project1">1</div>
+                <div class="portfolio__project1">2</div>
+                <div class="portfolio__project1">3</div>
+                <div class="portfolio__project1">4</div>
+                <div class="portfolio__project1">5</div>
+                <div class="portfolio__project1">6</div>
+            </div>
         </div>
         
     </section>
@@ -128,14 +137,14 @@ Ready to consider project work and full-time employment.
             <div class="contacts__bottom">
 
                 <div class="contacts__formblock">
-                    <form class="contacts__form form">
+                    <form class="contacts__form form" id="form" action="#">
                         <div class="form__item">
                             <!-- <label for="formName" class=""form__label>Name*:</label> -->
-                            <input  class="form__input" type="text" name="name" id="formName" placeholder="Full name">
+                            <input  class="form__input _req" type="text" name="name" id="formName" placeholder="Full name*">
                         </div>
                         <div class="form__item">
                             <!-- <label for="formEmail" class=""form__label>Email*:</label> -->
-                            <input  class="form__input" type="text" name="email" id="formEmail" placeholder="Email address">
+                            <input  class="form__input _req _email" type="text" name="email" id="formEmail" placeholder="Email address*">
                         </div>
                         <div class="form__item">
                             <!-- <label for="formText" class=""form__label>Message:</label> -->
@@ -180,7 +189,7 @@ Ready to consider project work and full-time employment.
     </footer>
 
 
-    <script src="/src/assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>

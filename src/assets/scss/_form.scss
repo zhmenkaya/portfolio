@@ -42,8 +42,36 @@
         
     }
 }
+.contacts__form{
+    position: relative;
+}
+.contacts__form::after{
+   content:'';
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(51, 51, 51, 0.9) url(../images/loading.gif) center / 50px no-repeat;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s ease 0s;
+   -webkit-transition: all 0.5s ease 0s;
+   -moz-transition: all 0.5s ease 0s;
+   -ms-transition: all 0.5s ease 0s;
+   -o-transition: all 0.5s ease 0s;
+}
+.contacts__form._sending::after{
+    opacity: 1;
+    visibility:visible;
+}
+
 
 textarea.form__input{
     min-height: 120px;
     resize: vertical;
+}
+
+.form__input._error{
+    box-shadow: 0 0 15px red;
 }
