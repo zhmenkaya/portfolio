@@ -15,6 +15,12 @@ body {
   background-color: #3E3E3E;
   color: #81C341;
   padding: 20px; }
+  .header .container {
+    max-width: 1140px;
+    margin: 0 auto; }
+  .header__top {
+    display: flex;
+    justify-content: space-between; }
   .header__nav {
     display: flex;
     justify-content: flex-end; }
@@ -23,9 +29,21 @@ body {
     display: flex; }
   .header__item {
     margin-right: 25px; }
+  .header__item:last-child {
+    margin-right: 0; }
   .header__link {
     text-decoration: none;
     color: #81C341; }
+
+.social {
+  display: flex; }
+  .social__iconwrap {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px; }
+  .social__icon {
+    width: 100%;
+    padding: 5px; }
 
 .main {
   height: 100%;
@@ -246,8 +264,7 @@ body {
   .portfolio__project-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     gap: 25px; }
   .portfolio__project1 {
     overflow: hidden;
@@ -260,7 +277,8 @@ body {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    box-shadow: 0 0 15px #81C341; }
+    box-shadow: 0 0 15px #81C341;
+    opacity: 0.8; }
   .portfolio__project1:hover {
     box-shadow: 0 0 30px #436620; }
 
@@ -390,7 +408,7 @@ textarea.form__input {
   box-shadow: 0 0 15px red; }
 
 .footer {
-  height: 200px;
+  height: 150px;
   background-color: #81C341; }
   .footer .container {
     max-width: 1140px;
@@ -401,8 +419,31 @@ textarea.form__input {
     align-items: center; }
   .footer__top {
     display: flex;
-    margin: 15px 0; }
+    margin: 15px 0;
+    position: relative;
+    z-index: 2; }
+  .footer__btnTop {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    position: fixed;
+    right: 14%;
+    bottom: 19%; }
+    .footer__btnTop::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-image: url("./../images/up-arrow.png");
+      background-size: cover;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 15px #476b23; }
   .footer__iconwrap {
+    width: 50px;
+    height: 50px;
     border: 2px solid #3E3E3E;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -412,7 +453,7 @@ textarea.form__input {
     margin-right: 15px; }
   .footer__icon {
     width: 100%;
-    padding: 10px; }
+    padding: 5px; }
   .footer__copyright {
     margin-top: 22px;
     color: #3E3E3E; }

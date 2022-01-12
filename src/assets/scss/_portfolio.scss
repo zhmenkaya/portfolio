@@ -32,8 +32,8 @@
     &__project-wrapper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:  repeat(3, 1fr);
-        margin-bottom: 20px;
+        // grid-template-rows:  repeat(3, 1fr);
+        margin-bottom: 30px;
         gap: 25px;
     }
     
@@ -49,6 +49,7 @@
         -ms-border-radius:30px;
         -o-border-radius:30px;
         box-shadow: 0 0 15px #81C341;
+        opacity: 0.8;
     }
     &__project1:hover{
         box-shadow: 0 0 30px #436620;

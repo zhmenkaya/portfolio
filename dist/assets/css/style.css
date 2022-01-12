@@ -19,6 +19,18 @@ body {
     padding: 20px;
 }
 
+.header .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 .header__nav {
     display: -ms-flexbox;
     display: flex;
@@ -36,9 +48,29 @@ body {
     margin-right: 25px;
 }
 
+.header__item:last-child {
+    margin-right: 0;
+}
+
 .header__link {
     text-decoration: none;
     color: #81C341;
+}
+
+.social {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.social__iconwrap {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.social__icon {
+    width: 100%;
+    padding: 5px;
 }
 
 .main {
@@ -335,8 +367,7 @@ body {
 .portfolio__project-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     gap: 25px;
 }
 
@@ -352,6 +383,7 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     box-shadow: 0 0 15px #81C341;
+    opacity: 0.8;
 }
 
 .portfolio__project1:hover {
@@ -510,6 +542,32 @@ body {
     cursor: pointer;
 }
 
+.contacts__form {
+    position: relative;
+}
+
+.contacts__form::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.9) url(../images/loading.gif) center/50px no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+.contacts__form._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 textarea.form__input {
     min-height: 120px;
     resize: vertical;
@@ -520,7 +578,7 @@ textarea.form__input {
 }
 
 .footer {
-    height: 200px;
+    height: 150px;
     background-color: #81C341;
 }
 
@@ -544,7 +602,17 @@ textarea.form__input {
     margin: 15px 0;
 }
 
+.footer__btn-top {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    position: fixed;
+    left: 50%;
+}
+
 .footer__iconwrap {
+    width: 50px;
+    height: 50px;
     border: 2px solid #3E3E3E;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -556,7 +624,7 @@ textarea.form__input {
 
 .footer__icon {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .footer__copyright {
