@@ -129,6 +129,7 @@ body {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    fill: red;
 }
 
 .about {
@@ -600,14 +601,30 @@ textarea.form__input {
     display: -ms-flexbox;
     display: flex;
     margin: 15px 0;
+    position: relative;
+    z-index: 2;
 }
 
-.footer__btn-top {
+.footer__btnTop {
+    display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid red;
     position: fixed;
-    left: 50%;
+    right: 14%;
+    bottom: 19%;
+}
+
+.footer__btnTop::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("./../images/up-arrow.png");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 15px #476b23;
 }
 
 .footer__iconwrap {

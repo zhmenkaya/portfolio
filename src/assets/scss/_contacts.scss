@@ -1,5 +1,6 @@
 .contacts{
     background-color: #3E3E3E;
+    height: 100vh;
     .container{
         max-width: 1140px;
         margin: 0 auto;
@@ -61,6 +62,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 15px #37531b;
+        }
     }
     &__form{
         display: flex;
