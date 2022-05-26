@@ -23,8 +23,8 @@
         
         // border:1px solid red;
         position: fixed;
-        right: 14%;
-        bottom: 19%;
+        right: 50%;
+        bottom: 15%;
         &::before{
             content: "";
             display: block;
@@ -35,7 +35,7 @@
             background-size: cover;
             top: 0;
             left: 0;
-            box-shadow: 0 0 15px #476b23;
+            // box-shadow: 0 0 15px #476b23;
         }
     }
     &__iconwrap{
