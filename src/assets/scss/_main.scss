@@ -1,71 +1,44 @@
 .main{
-    border: 1px solid red;
     height: 100%;
-    background: rgb(62,62,62);
-    background: linear-gradient(180deg, rgba(62,62,62,1) 58%, rgba(242,242,242,1) 50%);
-    color:#6ba036;
-    position: relative;
-    z-index: 1;
-    &__dack-wrap{
-
-    }
+    background: linear-gradient(180deg, rgba(62,62,62,1) 55%, rgba(242,242,242,1) 50%);
     .container{
-        max-width: 1140px;
+        max-width: 73.125rem;
         margin: 0 auto;
     }
     &__wrap{
         display: flex;
         justify-content: space-between;
-        padding: 100px 0;
-        //overflow: hidden;
+        padding: 9.06em 0.935em;
     }
     &__wrap-title{
-        margin-top: 60px;
+        margin: 3.75em 2em 0 0;
     }
     &__text{
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 1px;
-        margin: 0 0 35px;
+        @include text(1.25rem, 700, 200%, $accentColor);
+        letter-spacing: 0.05em;
+        margin: 0 0 1.75em;
         text-transform: uppercase;
     }
     &__title{
-        color:#ffffff;
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 40px;
+        @include text(2.25rem, 700, 110%, $secondaryColor);
         letter-spacing: normal;
         text-transform: uppercase;
-        margin: 0 0 35px;
-        line-height: 1.1;
+        margin: 0 0 0.975em;
     }
     &__wrap-img{
         height: auto;
-        max-width: 400px;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        max-width: 550px;
         overflow: hidden;
-        box-shadow: -9px 12px 52px 35px rgba(107, 160, 51, 0.2) inset;
         box-shadow: 48px 24px 52px 35px rgba(107, 160, 51, 0.2);
         position: relative;
         z-index: 3;
-        background-image: url("./images/main-photo.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
     }
     &__img{
         width: 100%;
         object-fit: cover;
-        position: relative;
-        // display: inline-block;
-        // box-shadow: -9px 12px 52px 35px rgba(107, 160, 51, 0.2) inset;
-        z-index: 5;
-
 }
 }
 
