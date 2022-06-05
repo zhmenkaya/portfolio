@@ -157,7 +157,6 @@ body {
       fill: #81C341; }
 
 .main {
-  border: 1px solid red;
   height: 100%;
   background: linear-gradient(180deg, #3e3e3e 55%, #f2f2f2 50%); }
   @media (max-width: 1180px) {
@@ -265,36 +264,72 @@ body {
       display: none; } }
 
 .about {
+  border: 1px solid red;
   height: 100vh;
   background: #F2F2F2; }
   .about .container {
-    max-width: 1140px;
+    max-width: 73.125rem;
     margin: 0 auto; }
+    @media (max-width: 1180px) {
+      .about .container {
+        max-width: 60.125rem; } }
+    @media (max-width: 980px) {
+      .about .container {
+        max-width: 47.125rem; } }
+  .about__wrapper {
+    padding: 0 0.935em; }
   .about__title {
     margin: 0 auto;
     display: inline-block;
-    padding: 15px;
+    padding: 1.25em;
     background-color: #3E3E3E;
-    color: #F2F2F2;
-    font-size: 24px;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: #81C341;
     letter-spacing: normal;
     text-transform: uppercase;
-    margin: 300px 0 35px 0;
-    line-height: 1.1;
+    margin: 4.25em 0 9.45em 0;
     position: relative; }
+    @media (max-width: 768px) {
+      .about__title {
+        margin: 4.25em 0 6.45em 0; } }
+    @media (max-width: 576px) {
+      .about__title {
+        margin: 4.25em 0 3.45em 0; } }
+    @media (max-width: 380px) {
+      .about__title {
+        margin: 4.25em 0 2.45em 0; } }
     .about__title::after {
       content: "";
       display: block;
-      width: 200px;
-      height: 2px;
+      width: 100%;
+      height: 2%;
       background-color: #3E3E3E;
       position: absolute;
       top: 50%;
       left: 100%; }
+      @media (max-width: 576px) {
+        .about__title::after {
+          width: 80%; } }
+      @media (max-width: 400px) {
+        .about__title::after {
+          width: 70%; } }
+      @media (max-width: 380px) {
+        .about__title::after {
+          width: 40%; } }
   .about__text {
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #3E3E3E;
     text-align: center; }
+    @media (max-width: 380px) {
+      .about__text {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 140%;
+        color: #3E3E3E; } }
 
 .skills {
   background-color: #3E3E3E;
