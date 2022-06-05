@@ -1,5 +1,15 @@
 .social{
     display: flex;
+    margin-left: 15em;
+    @media (max-width: 1180px) {
+        margin-left: 11em;
+    }
+    @media (max-width: 930px) {
+        margin-left: 9em;
+    }
+    @media (max-width: 830px) {
+        margin-left: 7em;
+    }
     &__iconwrap{
         width: 30px;
         height: 30px;
