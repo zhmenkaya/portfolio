@@ -157,9 +157,13 @@ body {
       fill: #81C341; }
 
 .main {
+  border: 1px solid red;
   height: 100%;
   background: linear-gradient(180deg, #3e3e3e 55%, #f2f2f2 50%); }
   @media (max-width: 1180px) {
+    .main {
+      background: linear-gradient(180deg, #3e3e3e 58%, #f2f2f2 50%); } }
+  @media (max-width: 980px) {
     .main {
       background: linear-gradient(180deg, #3e3e3e 61%, #f2f2f2 50%); } }
   .main .container {
@@ -180,12 +184,20 @@ body {
         padding: 7.06em 0.935em; } }
     @media (max-width: 768px) {
       .main__wrap {
-        flex-wrap: wrap; } }
+        flex-direction: column;
+        align-items: center;
+        padding: 2.06em 0.935em; } }
   .main__wrap-title {
     margin: 3.75em 2em 0 0; }
     @media (max-width: 1180px) {
       .main__wrap-title {
         margin: 5.75em 2em 0 0; } }
+    @media (max-width: 980px) {
+      .main__wrap-title {
+        margin: 3.75em 2em 0 0; } }
+    @media (max-width: 768px) {
+      .main__wrap-title {
+        margin: 3.75em 0 3em 0; } }
   .main__text {
     font-weight: 700;
     font-size: 1.25rem;
@@ -198,6 +210,10 @@ body {
       .main__text {
         max-width: 24rem;
         margin: 0 0 0.75em; } }
+    @media (max-width: 1180px) {
+      .main__text {
+        font-size: 0.85rem;
+        margin: 0 0 1.25em; } }
   .main__title {
     font-weight: 700;
     font-size: 2.25rem;
@@ -208,7 +224,18 @@ body {
     margin: 0 0 0.975em; }
     @media (max-width: 1180px) {
       .main__title {
-        margin: 0 0 0.55em; } }
+        margin: 0 0 0.55em;
+        font-size: 2.05rem;
+        letter-spacing: 0.05em; } }
+    @media (max-width: 768px) {
+      .main__title {
+        font-size: 1.65rem; } }
+    @media (max-width: 360px) {
+      .main__title {
+        font-size: 1.45rem; } }
+    @media (max-width: 320px) {
+      .main__title {
+        font-size: 1.15rem; } }
   .main__wrap-img {
     height: auto;
     max-width: 34.375rem;
@@ -222,11 +249,13 @@ body {
     @media (max-width: 1180px) {
       .main__wrap-img {
         max-width: 27.125rem; } }
-    @media (max-width: 768px) {
+    @media (max-width: 980px) {
       .main__wrap-img {
         max-width: 25.125rem; } }
   .main__img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 10%;
+    height: auto;
     object-fit: cover; }
 
 .main__text span {

@@ -1,7 +1,11 @@
 .main{
+    border: 1px solid red;
     height: 100%;
     background: linear-gradient(180deg, rgba(62,62,62,1) 55%, rgba(242,242,242,1) 50%);
     @media (max-width: 1180px) {
+        background: linear-gradient(180deg, rgba(62,62,62,1) 58%, rgba(242,242,242,1) 50%);
+    }
+    @media (max-width: 980px) {
         background: linear-gradient(180deg, rgba(62,62,62,1) 61%, rgba(242,242,242,1) 50%);
     }
     .container{
@@ -22,13 +26,21 @@
             padding: 7.06em 0.935em;
         }
         @media (max-width: 768px) {
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items:center;
+            padding: 2.06em 0.935em;
         }
     }
     &__wrap-title{
         margin: 3.75em 2em 0 0;
         @media (max-width: 1180px) {
             margin: 5.75em 2em 0 0;
+        }
+        @media (max-width: 980px) {
+            margin: 3.75em 2em 0 0;
+        }
+        @media (max-width: 768px) {
+            margin: 3.75em 0 3em 0;
         }
     }
     &__text{
@@ -40,6 +52,10 @@
             max-width: 24rem;
             margin: 0 0 0.75em;
         }
+        @media (max-width: 1180px) {
+            font-size: 0.85rem;
+            margin: 0 0 1.25em;
+        }
     }
     &__title{
         @include text(2.25rem, 700, 110%, $secondaryColor);
@@ -48,6 +64,17 @@
         margin: 0 0 0.975em;
         @media (max-width: 1180px) {
             margin: 0 0 0.55em;
+            font-size: 2.05rem;
+            letter-spacing: 0.05em;
+        }
+        @media (max-width: 768px) {
+            font-size: 1.65rem;
+        }
+        @media (max-width: 360px) {
+            font-size: 1.45rem;
+        }
+        @media (max-width: 320px) {
+            font-size: 1.15rem;
         }
     }
     &__wrap-img{
@@ -63,12 +90,15 @@
         @media (max-width: 1180px) {
             max-width: 27.125rem;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 980px) {
             max-width: 25.125rem;
         }
     }
     &__img{
-        width: 100%;
+        max-width: 100%;
+        // width: 80%;
+        min-width: 10%;
+        height: auto;
         object-fit: cover;
 }
 }
