@@ -1,48 +1,59 @@
 .skills{
-    background-color: #3E3E3E;
+    border: 1px solid red;
+    background-color: $darkColor;
     height: 100vh;
-    display: flex;
-    // align-items: center;
-    justify-content: center;
     .container{
-        width: 1140px;
+        max-width: 73.125rem;
         margin: 0 auto;
+        @media (max-width: 1180px) {
+            max-width: 60.125rem;
+        }
+        @media (max-width: 980px) {
+            max-width: 47.125rem;
+        }
+    }
+    &__inner{
+        padding: 0 0.935em;
     }
     &__title{
         margin: 0 auto;
         display: inline-block;
-        padding: 15px 45px; 
-        background-color:#3E3E3E;
-        border: 2px solid #81C341;
-        color:#81C341;
-        font-size: 24px;
-        font-weight: 400;
+        padding: 1.25em; 
+        background-color:$darkColor;
+        border: 2px solid $accentColor;
+        @include text(1.5rem, 700, 120%, $accentColor);
         letter-spacing: normal;
         text-transform: uppercase;
-        margin: 40px 0 30px 0;
-        line-height: 1.1;
+        margin: 4.25em 0 3.45em 0;
         position: relative;
         &::after{
             content: "";
             display: block;
             width: 200px;
             height: 2px;
-            background-color:#81C341;
+            background-color:$accentColor;
             position: absolute;
             top: 50%;
             left: 100%;
         }
     }
-    &__bottom{
+    &__content{
         display: flex;
         justify-content: space-between;
     }
     &__wrap-img{
         max-width: 400px;
         margin-top: 25px;
+        background-image: url(./assets/images/coding-g2f57cb9c9_640.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     &__image{
-        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
     }
     &__wrap{
         width: 60%;
@@ -53,25 +64,24 @@
 
 
 .skill__name{
-    font-size: 18px;
-    font-weight: 600;
-    color:white;
+    @include text(1.25rem, 600, 120%, white);
     text-transform: uppercase;
     margin: 20px 0;
 }
 
 .skill__bar{
-    height: 8px;
+    height: 16px;
     background-color:#686767;
     border-radius:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     -ms-border-radius:3px;
     -o-border-radius:3px;
+    margin-bottom: 45px;
 }
 
 .skill__per{
-    height: 8px;
+    height: 16px;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     border-radius:3px;
     position: relative;
